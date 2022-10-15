@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="checkbox.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="sign.css" />
+    <link rel="stylesheet" href="titre.css" />
+    <link rel="stylesheet" href="derouleur.css" />
+    <link rel="stylesheet" href="texte.css" />
+    <link rel="stylesheet" href="test.css" />
+    <title>wellcome</title>
+    <div class="hero-container">
+      <div class="environment"></div>
+      <h2 class="hero glitch layers" data-text="近設計">
+        <span>Wellcome</span>
+      </h2>
+    </div>
+
+    <script src="https://js.cx/libs/animate.js"></script>
+  </head>
+
+  <!-- cacher/afficher la page-->
+  <script>
+    function maFonction() {
+      var div = document.getElementById("togg1");
+      if (div.style.display === "none") {
+        div.style.display = "block";
+      } else {
+        div.style.display = "none";
+      }
+    }
+  </script>
+
+  <!-- texte auto tap-->
+  <script>
+    function animateText(textArea) {
+      var div = document.getElementById("textExample");
+
+      let text = textArea.value;
+      let to = text.length,
+        from = 0;
+
+      animate({
+        duration: 5000,
+        timing: bounce,
+        draw: function (progress) {
+          let result = (to - from) * progress + from;
+          textArea.value = text.slice(0, Math.ceil(result));
+        },
+      });
+    }
+
+    function bounce(timeFraction) {
+      for (let a = 0, b = 1; 1; a += b, b /= 2) {
+        if (timeFraction >= (7 - 4 * a) / 11) {
+          return (
+            -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+          );
+        }
+      }
+    }
+  </script>
+
+  <script>
+    function animateText(textArea) {
+      var div = document.getElementById("textExample2");
+      if (div.style.display === "none") {
+        div.style.display = "block";
+      } else {
+        div.style.display = "none";
+      }
+
+      let text = textArea.value;
+      let to = text.length,
+        from = 0;
+
+      animate({
+        duration: 5000,
+        timing: bounce,
+        draw: function (progress) {
+          let result = (to - from) * progress + from;
+          textArea.value = text.slice(0, Math.ceil(result));
+        },
+      });
+    }
+
+    function bounce(timeFraction) {
+      for (let a = 0, b = 1; 1; a += b, b /= 2) {
+        if (timeFraction >= (7 - 4 * a) / 11) {
+          return (
+            -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+          );
+        }
+      }
+    }
+  </script>
+
+  <body>
+    <div class="containe">
+      <div class="section">
+        <table width="85%" border="0px">
+          <tr>
+            <td width="50%">
+              <!--le sign in-->
+              <div class="sign">
+                <div class="box">
+                  <div class="form">
+                    <h2>Sign In</h2>
+                    <div class="inputBox">
+                      <input type="text" required="required" />
+                      <span>Username</span>
+                      <i></i>
+                    </div>
+                    <div class="inputBox">
+                      <input type="password" required="required" />
+                      <span>Password</span>
+                      <i></i>
+                    </div>
+                    <div class="links">
+                      <br />
+                      <br />
+                      <br /><br />
+                      <a href="#">Forgot Password?</a>
+
+                      <a href="#">Sign Up</a>
+                    </div>
+
+                    <input type="submit" value="Login" class="c" />
+                  </div>
+                </div>
+              </div>
+            </td>
+
+            <td width="50%">
+              <!-- les infos pour faire jolie-->
+              <div class="sign">
+                <div class="boxtexte">
+                  <div class="form">
+                    <h2>
+                      Site réalisé par :
+                      <p></p>
+                      Paul et Tom Bonne visite !
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section">
+        <table width="100%" border="0px">
+          <tr>
+            <td width="20%">
+              <!-- interupteur (il est jolie)-->
+              <div class="check">
+                <label>
+                  <input
+                    type="checkbox"
+                    onclick="animateText(textExample2); maFonction()"
+                  />
+                  <!---<input type="checkbox" onclick="maFonction()" />--->
+                  <div class="icon">
+                    <div class="shadow"></div>
+                    <div class="iconBox">
+                      <ion-icon name="power-outline"></ion-icon>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </td>
+            <td width="20%">
+              <!-- code random -->
+              <textarea
+                id="textExample2"
+                style="display: none"
+                rows="20"
+                cols="60"
+              >
+             .container {
+                  width: 100%;
+                  min-height: 10vh;
+                  
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  
+                }
+                
+                ul {
+                  position: relative;
+                  transform: skewY(-15deg);
+                }
+                
+                ul li {
+                  position: relative;
+                  list-style: none;
+                  width: 400px;
+                  background: #3e3f46; </textarea
+              >
+            </td>
+
+            <td width="60%">
+              <!-- t'es pas con c'est le menu -->
+
+              <div id="togg1" style="display: none">
+                <div class="container">
+                  <ul>
+                    <li style="--i: 6"><a href="index.html">Home</a></li>
+                    <li style="--i: 5"><a href="consomation.html">consomation</a></li>
+                    <li style="--i: 4"><a href="#">Services</a></li>
+                    <li style="--i: 3"><a href="#">Portfolio</a></li>
+                    <li style="--i: 2"><a href="#">Our Team</a></li>
+                    <li style="--i: 1"><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section"></div>
+    </div>
+
+    <!-- bref bas de la page avec un script js pour l'icon -->
+    <footer>
+      <div class="footer">
+        <p>Footer</p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

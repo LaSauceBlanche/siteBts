@@ -1,3 +1,4 @@
+/* afficher/cacher */
 function maFonction() {
     var div = document.getElementById("togg1");
     if (div.style.display === "none") {

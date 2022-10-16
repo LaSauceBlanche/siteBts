@@ -386,7 +386,7 @@ ul li:hover {
 }
 
 ul li:hover::before {
-  background: #347d8f;
+  background: #307283;
 }
 
 ul li:hover::after {

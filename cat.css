@@ -17,7 +17,7 @@
     height: 10%;
     width: 5%;
     border-radius: 50%;
-    background: #161616;
+    background: #15161a;
 }
 .ear::after {
     transform-origin: 50% 100%;
@@ -48,7 +48,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #161616;
+    background: #15161a;
     border-radius: 50%;
 }
 .eye {
@@ -67,7 +67,7 @@
     height: 0;
     width: 100%;
     border-radius: 0 0 50% 50Array/0Array 0 40% 40%;
-    background: #161616;
+    background: #15161a;
     animation: blink 4s infinite ease-in;
 }
 @keyframes blink {
@@ -116,7 +116,7 @@
     top: 25%;
     height: 50%;
     width: 20%;
-    background: #161616;
+    background: #15161a;
     border-radius: 50%;
     animation: look-around 4s infinite;
 }
@@ -189,7 +189,7 @@
     height: 10%;
     width: 5%;
     border-radius: 50%;
-    background: #161616;
+    background: #15161a;
 }
 .ear::after {
     transform-origin: 50% 100%;
@@ -220,7 +220,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #161616;
+    background: #15161a;
     border-radius: 50%;
 }
 .eye {
@@ -239,7 +239,7 @@
     height: 0;
     width: 100%;
     border-radius: 0 0 50% 50Array/0Array 0 40% 40%;
-    background: #161616;
+    background: #15161a;
     animation: blink 4s infinite ease-in;
 }
 @keyframes blink {
@@ -288,7 +288,7 @@
     top: 25%;
     height: 50%;
     width: 20%;
-    background: #161616;
+    background: #15161a;
     border-radius: 50%;
     animation: look-around 4s infinite;
 }
@@ -347,5 +347,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #161616;
+    background: #15161a;
 }

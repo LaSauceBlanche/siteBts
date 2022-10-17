@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
 }
 
 .containe {
@@ -17,9 +16,8 @@ body {
   background: #000;
 }
 
-.containe .section::before
-{
-filter: blur(1);
+.containe .section::before {
+  filter: blur(1);
 }
 
 .containe .section:nth-child(1) {

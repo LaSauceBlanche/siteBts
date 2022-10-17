@@ -276,6 +276,7 @@ label input:checked ~ .icon .iconBox ion-icon {
   display: flex;
 }
 
+
 .loader span {
   position: relative;
   width: 50px;
@@ -325,3 +326,6 @@ label input:checked ~ .icon .iconBox ion-icon {
       filter: hue-rotate(360deg);
   }
 }
+
+
+

@@ -248,15 +248,15 @@ label input:checked ~ .icon .iconBox ion-icon {
   }
 }
 
+/*------- random things------*/
 .amogus{
   color: #ff4545;
  
 }
 
-
-
-
-
+.lignefooter{
+  margin-left: -100px;
+}
 
 
 

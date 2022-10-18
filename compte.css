@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  margin-top: 4%;
+  padding: 0;
+  background: #23242a;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.titre {
+    
+  color: whitesmoke;
+  font-size: 2em;
+  height: 55px;
+  width: 300px;
+background: #3a3d47;
+border-radius: 15px;
+}
+
+
+
+.box {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  background: #15161a;
+  height: 600px;
+  width: 400px;
+  border-radius: 25px;
+}
+
+.minibox {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 150px;
+  background: #3a3d47;
+  height: 100px;
+  width: 300px;
+  border-radius: 15px;
+}
+.minibox1 {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 300px;
+  background: #3a3d47;
+  height: 100px;
+  width: 300px;
+  border-radius: 15px;
+}
+.minibox2 {
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 450px;
+  background: #3a3d47;
+  height: 100px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.info {
+  color: #fff;
+  align-content: center;
+  margin-left: 60px;
+}
+
+.PP {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 150px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background: #3a3d47;
+}
+
+.inpp {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 35px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background: #15161a;
+}
+
+.bodypp {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background: #15161a;
+}
+
+/*--------bouton home ---------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+.container {
+  display: flex;
+}
+
+ul {
+  position: relative;
+  transform: skewY(-15deg);
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 400px;
+  background: #3e3f46;
+  padding: 15px;
+  z-index: var(--i);
+  transition: 0.5s;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background: #2e3133;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #2e3133;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+
+ul li:last-child::after {
+  box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.25);
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: #999;
+  display: block;
+  transition: 0.5s;
+}
+
+ul li:hover {
+  background: #f7fff5;
+  transform: translateX(-50px);
+}
+
+ul li:hover::before {
+  background: #8c8d8c;
+}
+
+ul li:hover::after {
+  background: #c2c4c2;
+}
+
+ul li:hover a {
+  color: black;
+}

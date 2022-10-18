@@ -1,6 +1,7 @@
 body {
   margin: 0;
   margin-top: 4%;
+  margin-bottom: 0;
   padding: 0;
   background: #23242a;
   font-family: "Poppins", sans-serif;
@@ -15,6 +16,15 @@ body {
   width: 300px;
 background: #3a3d47;
 border-radius: 15px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ 
+  
 }
 
 

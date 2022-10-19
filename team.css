@@ -1,7 +1,9 @@
 body {
   margin-top: 70px;
-  margin-left: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
   padding: 0;
+   background-color: #23242a;
 }
 
 .titre {
@@ -16,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  
 }
 .box {
   position: relative;
@@ -157,7 +159,7 @@ input[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  
 }
 .boxtexte {
   position: relative;

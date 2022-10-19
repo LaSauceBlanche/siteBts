@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-bottom: 0;
   padding: 0;
   background: #23242a;
@@ -9,13 +9,15 @@ body {
 }
 
 .titre {
-    
+  position: relative;
+
   color: whitesmoke;
   font-size: 2em;
-  height: 55px;
+  
   width: 300px;
-background: #3a3d47;
-border-radius: 15px;
+  margin-top: -60%;
+  background: #3a3d47;
+  border-radius: 15px;
 }
 
 .footer {
@@ -23,11 +25,7 @@ border-radius: 15px;
   left: 0;
   bottom: 0;
   width: 100%;
- 
-  
 }
-
-
 
 .box {
   margin-left: 50px;

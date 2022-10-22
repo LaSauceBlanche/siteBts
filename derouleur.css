@@ -6,9 +6,11 @@ body {
 .containe {
   position: relative;
   width: 100%;
+  
 }
 
 .containe .section {
+  
   position: sticky;
   top: 0;
   width: 100%;
@@ -17,7 +19,7 @@ body {
 }
 
 .containe .section::before {
-  filter: blur(1);
+  filter: blur(50px);
 }
 
 .containe .section:nth-child(1) {

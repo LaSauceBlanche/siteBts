@@ -249,14 +249,19 @@ label input:checked ~ .icon .iconBox ion-icon {
 }
 
 /*------- random things------*/
-.amogus{
+.titre{
+  position: absolute;
+  margin-top: 10%;
+margin-left: 38%;
   color: #ff4545;
- 
+  font-size: 2em;
 }
 
 .lignefooter{
   margin-left: -100px;
 }
+
+
 
 
 

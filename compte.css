@@ -20,11 +20,14 @@ body {
   border-radius: 15px;
 }
 
-.footer {
-  position: absolute;
-  left: 0;
-  margin-bottom: 0;
+footer {
+  
+  position: fixed;
+  bottom: 0;
   width: 100%;
+ 
+
+
 }
 
 .box {
